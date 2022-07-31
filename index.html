@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook - log in or sign up</title>
+</head>
+<body>
+    <div class="landing">
+        <div class="sizing">
+            <div class="left-box">
+                <div class="image-box">
+                    <img class="fb-logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="facebook logo">
+                </div>
+                <h2 class="fb-info">Facebook helps you connect and share with the people in your life</h2>
+            </div>
+            
+            <div class="right-box">
+                <div class="sizing-right">
+                    <form action="" class="fb-form">
+                        <div class="form">
+                            <input class="login" type="text" placeholder="Email address or phone number">
+                            <input type="password" name="Password" id="pass" placeholder="Password">
+                        </div>
+                        <div class="log-btn">
+                            <a href="#"><button class="login-btn">Log in</button></a>
+                        </div>
+                        
+                        <div class="forgot-pass">
+                            <a href="#" class="forgot">Forgotten password?</a>
+                        </div>
+                        <div class="line"></div>
+                        <div class="new-account">
+                            <a href="#"  id="new-account-btn">Create New Account
+                                <!-- <button class="new-account-btn" id="new-account-btn">Create New Account</button> -->
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="create-page">
+                    <a class="creation-page" href="#">Create a Page </a>  for a celebrity, brand or business.
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bg-model">
+        <div class="model-content">
+            <i class="fa-solid fa-xmark close"></i> 
+            <div class="reg-form">
+                <div class="registration-header">
+                    <div class="pop-up-header">sign up</div>
+                    <div class="pop-up-paragraph">It's quick and easy.</div>
+                    <div class="reg-line"></div>
+                </div>
+                <form action="" class="form-popup">
+                    <div class="names">
+                        <input class="name-box" type="text" placeholder="First name">
+                        <input class="name-box "type="text" placeholder="Last name">
+                    </div>
+                    <div class="mob-pass">
+                        <input class="mail-input" type="text" placeholder="Mobile number or email address">
+                        <input class="mail-input" type="password" name="password1" id="password" placeholder="New password">
+                    </div>
+                    <div class="date-selects-header">
+                        Date of birth
+                        <a href="#"><i class="fa-solid fa-circle-question help"></i></a>
+                    </div>
+                    <div class="date-selectors ">
+                        <select class="day select-style">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <select class="month select-style">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                        </select>
+                        <select class="year select-style">
+                            <option value="1">2000</option>
+                            <option value="2">1999</option>
+                            <option value="3">1998</option>
+                            <option value="4">1997</option>
+                            <option value="5">1996</option>
+                        </select>
+                    </div>
+                    <div class="gender-header">
+                        Gender
+                        <a href="#"><i class="fa-solid fa-circle-question help"></i></a>
+                    </div>
+                    <div class="select-gender">
+                        <span class="gen">
+                            <label for="fem">Female</label>
+                            <input type="radio" name="gender" id="male">
+                        </span>
+                        <span class="gen">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female">
+                        </span>
+                        <span class="gen">
+                            <label for="custom">Custom</label>
+                            <input type="radio" name="gender" id="custom">
+                        </span>
+                    </div>
+                    <div class="reg-footer padding-lft ">
+                        <p class="footer-p" >People who use our service may have uploaded your contact information to Facebook. <a class="learn-more" href="#">Learn more.</a></p>
+                    </div>
+                    <div class="footer-terms padding-lft footer-p ">
+                        <p class="p-terms">By clicking Sign Up, you agree to our <a href="#">Terms,</a> <a href="#">Data Policy</a> and <a href="#">Cookie Policy.</a> You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+                    <div class="sign-up-btn">
+                        <button type="submit">Sign Up</button>
+                    </div>
+
+
+
+                </form>
+            </div>       
+        </div>
+    </div>
+    <script>
+        document.getElementById("new-account-btn").addEventListener("click" , function() {
+            document.querySelector(".bg-model").style.display = "flex";
+        });
+        document.querySelector(".close").addEventListener("click" , function(){
+            document.querySelector(".bg-model").style.display = "none";
+        });
+
+    </script>
+</body>
+</html>
